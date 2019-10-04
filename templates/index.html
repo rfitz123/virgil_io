@@ -1,0 +1,29 @@
+{% extends 'master.html' %}
+
+{% block title %}Virgil IO{% endblock %}
+
+{% block body %}
+
+<div id='title'>
+    <p>"Virgil IO"</p>
+</div>
+
+<div id='promotion'></div>
+<div id='shoe-dock'>
+    <img src="{{ url_for('serve_image') }}">
+</div>
+
+<div id='rating-dock'>
+    <div id=''>
+        <img class='emoji' src="../static/images/vomit_emoji.png">
+        <img class='emoji' src="../static/images/thinking_emoji.png">
+        <img class='emoji' src="../static/images/fire_emoji.png">
+    </div>
+    <input class='slider' type="range" min="0" max="10" value="5" step='1'>
+</div>
+
+<div id='button-dock'>
+    <button>"Show Me Another"</button>
+</div>
+
+{% endblock %}
